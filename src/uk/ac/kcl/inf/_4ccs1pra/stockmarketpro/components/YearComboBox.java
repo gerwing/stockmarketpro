@@ -14,8 +14,8 @@ public class YearComboBox extends JComboBox {
 
 	private DefaultComboBoxModel dataModel;
 	private String[] years;
-	static private int BEGIN_YEAR;
-	static private int END_YEAR;
+	private int BEGIN_YEAR;
+	private int END_YEAR;
 	
 	/**
 	 * Construct a new Year Combobox containing the years from begin_year until end_year
