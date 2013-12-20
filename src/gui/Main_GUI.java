@@ -8,6 +8,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -78,7 +80,7 @@ public class Main_GUI extends JFrame implements ActionListener {
 		cbEndDay.setToday();//set to current day
 		cbEndMonth = new MonthComboBox();
 		cbEndMonth.setToday();//set to current month
-		cbEndYear = new YearComboBox(1970,2012);
+		cbEndYear = new YearComboBox(1970, Calendar.getInstance().get(Calendar.YEAR));
 		cbEndYear.setToday();//set to current year
 		
 		//interval form
